@@ -1,0 +1,51 @@
+{
+  "name": "@inboxical/playwright",
+  "version": "0.1.0",
+  "description": "Inboxical Playwright helper — Email testing fixtures for Playwright",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "email",
+    "testing",
+    "playwright",
+    "qa",
+    "inbox",
+    "inboxical",
+    "e2e",
+    "otp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozers/inboxical-playwright.git"
+  },
+  "homepage": "https://inboxical.com",
+  "bugs": {
+    "url": "https://github.com/ozers/inboxical-playwright/issues"
+  },
+  "author": "Inboxical",
+  "license": "MIT",
+  "peerDependencies": {
+    "@playwright/test": ">=1.30.0"
+  },
+  "dependencies": {
+    "@inboxical/sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "typescript": "^5.4.0"
+  }
+}
